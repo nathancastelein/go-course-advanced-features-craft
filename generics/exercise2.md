@@ -25,9 +25,9 @@ Add this test:
 ```go
 func TestContainsMapString(t *testing.T) {
 	// Arrange
-	m := map[string]string{
-		"Hello": "Bonjour",
-		"World": "Monde",
+	m := map[int]string{
+		1: "Bonjour",
+		2: "Monde",
 	}
 	elem := "Monde"
 

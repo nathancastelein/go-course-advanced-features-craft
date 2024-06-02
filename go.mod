@@ -1,4 +1,4 @@
-module github.com/nathancastelein/go-course-advanced-craft/advanced-features
+module github.com/nathancastelein/go-course-advanced-craft
 
 go 1.22.1
 

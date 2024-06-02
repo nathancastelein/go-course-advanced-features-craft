@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/nathancastelein/go-course-advanced-craft/advanced-features/solution/hexagonal/application/user"
+	"github.com/nathancastelein/go-course-advanced-craft/solution/hexagonal/application/user"
 )
 
 var (

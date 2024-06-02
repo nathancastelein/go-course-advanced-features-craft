@@ -4,9 +4,9 @@ import (
 	"database/sql"
 	"log/slog"
 
-	"github.com/nathancastelein/go-course-advanced-craft/advanced-features/solution/hexagonal/application/user"
-	"github.com/nathancastelein/go-course-advanced-craft/advanced-features/solution/hexagonal/drivenadapter"
-	"github.com/nathancastelein/go-course-advanced-craft/advanced-features/solution/hexagonal/driveradapter/http"
+	"github.com/nathancastelein/go-course-advanced-craft/solution/hexagonal/application/user"
+	"github.com/nathancastelein/go-course-advanced-craft/solution/hexagonal/drivenadapter"
+	"github.com/nathancastelein/go-course-advanced-craft/solution/hexagonal/driveradapter/http"
 )
 
 func main() {

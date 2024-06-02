@@ -1,24 +1,81 @@
-# Exercise 1
+# Exercise 2
 
 ## Step 1
 
-Open [./contains.go](contains.go) file.
+Write a new function `Contains` with generics, to check if an elem is contained into a slice.
 
-Write the body of the function to return true if the string `elem` is contained in `slice`.
-
-Test your function:
+You can add two unit tests to test your generic implementation:
 
 ```go
-go test -run TestContainsString .
+func TestContainsGenericString(t *testing.T) {
+	// Arrange
+	slice := []string{"Hello", "World"}
+	elem := "Hello"
+
+	// Act
+	contains := Contains(slice, elem)
+
+	// Assert
+	if !contains {
+		t.Fatalf("%s expected to be contained in %v, got false", elem, slice)
+	}
+}
+
+func TestContainsGenericInt(t *testing.T) {
+	// Arrange
+	slice := []int{1, 2, 3}
+	elem := 3
+
+	// Act
+	contains := Contains(slice, elem)
+
+	// Assert
+	if !contains {
+		t.Fatalf("%d expected to be contained in %v, got false", elem, slice)
+	}
+}
+```
+
+Run your tests with:
+
+```bash
+go test -run TestContainsGeneric .
 ```
 
 ## Step 2
 
-Now we want the same function to check if an integer is contained into a slice.
+Open [containsmap.go](./containsmap.go) file.
 
-Write a new function: 
-```go
-func ContainsInteger(slice []int, elem int) bool {}
+Rewrite the function `ContainsMap` with generics, to check if `elem` is contained as a value in the given map `m`.
+To understand the expected behaviour, you can check the unit test [containsmap_test.go](./containsmap_test.go).
+
+You can then test your implementation with:
+```bash
+go test -run TestContainsMap .
 ```
 
-Don't forget to write the proper unit test in [contains_test.go](./contains_test.go).
+Add this test:
+
+```go
+func TestContainsMapString(t *testing.T) {
+	// Arrange
+	m := map[int]string{
+		1: "Bonjour",
+		2: "Monde",
+	}
+	elem := "Monde"
+
+	// Act
+	contains := ContainsMap(m, elem)
+
+	// Assert
+	if !contains {
+		t.Fatalf("%s expected to be contained in %v, got false", elem, m)
+	}
+}
+```
+
+Then run it to confirm your code is using generics:
+```bash
+go test -run TestContainsMapString .
+```

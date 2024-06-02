@@ -5,8 +5,8 @@ import (
 	"log/slog"
 
 	_ "github.com/lib/pq"
-	"github.com/nathancastelein/go-course-advanced-craft/advanced-features/solution/craft/pkg/adapters"
-	"github.com/nathancastelein/go-course-advanced-craft/advanced-features/solution/craft/pkg/http"
+	"github.com/nathancastelein/go-course-advanced-craft/solution/craft/pkg/adapters"
+	"github.com/nathancastelein/go-course-advanced-craft/solution/craft/pkg/http"
 )
 
 func main() {

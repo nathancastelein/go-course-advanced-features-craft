@@ -20,7 +20,7 @@ func TestMakeSomeNoise(t *testing.T) {
 	}()
 
 	// Act
-	MakeSomeNoise([]Animal{
+	MakeSomeNoise([]Speaker{
 		Cat{},
 		Dog{},
 		Cat{},

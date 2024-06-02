@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/DATA-DOG/go-sqlmock"
-	"github.com/nathancastelein/go-course-advanced-craft/advanced-features/solution/craft/pkg/user"
+	"github.com/nathancastelein/go-course-advanced-craft/solution/craft/pkg/user"
 	"github.com/stretchr/testify/require"
 )
 

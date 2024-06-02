@@ -2,7 +2,7 @@ package interfaces
 
 import "fmt"
 
-type Animal interface {
+type Speaker interface {
 	Speak() string
 }
 
@@ -18,7 +18,7 @@ func (d Dog) Speak() string {
 	return "Wouf!"
 }
 
-func MakeSomeNoise(animals []Animal) {
+func MakeSomeNoise(animals []Speaker) {
 	for _, animal := range animals {
 		fmt.Println(animal.Speak())
 	}

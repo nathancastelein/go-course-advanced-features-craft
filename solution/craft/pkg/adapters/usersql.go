@@ -3,7 +3,7 @@ package adapters
 import (
 	"database/sql"
 
-	"github.com/nathancastelein/go-course-advanced-craft/advanced-features/solution/craft/pkg/user"
+	"github.com/nathancastelein/go-course-advanced-craft/solution/craft/pkg/user"
 )
 
 type UserSQL struct {

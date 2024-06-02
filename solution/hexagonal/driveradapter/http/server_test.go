@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/labstack/echo/v4"
-	"github.com/nathancastelein/go-course-advanced-craft/advanced-features/solution/hexagonal/application/user"
+	"github.com/nathancastelein/go-course-advanced-craft/solution/hexagonal/application/user"
 	"github.com/stretchr/testify/require"
 )
 

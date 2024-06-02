@@ -8,13 +8,11 @@ Let's fix the tests!
 
 For this unit test, we will use a stub for the interface `user.Lister`.
 
-1. Add a new `type UserListerStub struct {}`
-2. Implement the `user.Lister` interface on this structure, by adding the `List` method
-
-The `List` should return static data:
-
 ```go
-    return []user.User{
+type UserListerStub struct{}
+
+func (u *UserGetterStub) List() ([]user.User, error) {
+	return []user.User{
 		{
 			Firstname: "SpongeBob",
 			Lastname:  "SquarePants",
@@ -24,6 +22,7 @@ The `List` should return static data:
 			Lastname:  "Star",
 		},
 	}, nil
+}
 ```
 
 ## Use this stub

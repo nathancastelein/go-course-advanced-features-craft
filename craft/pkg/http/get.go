@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo/v4"
-	"github.com/nathancastelein/go-course-advanced-craft/advanced-features/craft/pkg/user"
+	"github.com/nathancastelein/go-course-advanced-craft/craft/pkg/user"
 )
 
 func (s *Server) ListUsers(ctx echo.Context) error {

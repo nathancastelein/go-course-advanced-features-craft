@@ -5,7 +5,7 @@ import (
 	"log/slog"
 
 	_ "github.com/lib/pq"
-	"github.com/nathancastelein/go-course-advanced-craft/advanced-features/craft/pkg/http"
+	"github.com/nathancastelein/go-course-advanced-craft/craft/pkg/http"
 )
 
 func main() {

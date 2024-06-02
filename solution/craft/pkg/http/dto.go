@@ -1,6 +1,6 @@
 package http
 
-import "github.com/nathancastelein/go-course-advanced-craft/advanced-features/solution/craft/pkg/user"
+import "github.com/nathancastelein/go-course-advanced-craft/solution/craft/pkg/user"
 
 type User struct {
 	Firstname string `json:"firstname"`

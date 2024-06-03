@@ -1,4 +1,4 @@
-# Exercise 3
+# Exercise 2
 
 In [queue.go](./queue.go), we defined a new Queue structure for integers. 
 

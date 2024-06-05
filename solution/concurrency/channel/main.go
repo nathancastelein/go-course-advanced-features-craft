@@ -18,8 +18,10 @@ func main() {
 }
 
 func ConcurrentJob(jobNumber int, done chan bool) {
+	defer func() {
+		done <- true
+	}()
 	fmt.Printf("starting job %d\n", jobNumber)
 	time.Sleep(time.Duration(rand.Intn(500)) * time.Millisecond)
 	fmt.Printf("ending job %d\n", jobNumber)
-	done <- true
 }

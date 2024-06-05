@@ -11,7 +11,7 @@ For this unit test, we will use a stub for the interface `user.Lister`.
 ```go
 type UserListerStub struct{}
 
-func (u *UserGetterStub) List() ([]user.User, error) {
+func (u *UserListerStub) List() ([]user.User, error) {
 	return []user.User{
 		{
 			Firstname: "SpongeBob",
@@ -35,7 +35,7 @@ Fix the Arrange section of the unit test:
 ## Run test
 
 ```
-go test -run TestGetUser
+go test -run TestListUsers
 ```
 
 It should work!

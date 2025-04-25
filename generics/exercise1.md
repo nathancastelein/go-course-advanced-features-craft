@@ -2,6 +2,8 @@
 
 ## Step 1
 
+Open [contains.go](./contains.go) file.
+
 Write a new function `Contains` with generics, to check if an elem is contained into a slice.
 
 You can add two unit tests to test your generic implementation:

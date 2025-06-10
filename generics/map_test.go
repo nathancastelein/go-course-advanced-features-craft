@@ -17,7 +17,7 @@ func TestMapKeys(t *testing.T) {
 
 	// Assert
 	require.Len(t, keys, 2)
-	require.Equal(t, []string{"hello", "world"}, keys)
+	require.ElementsMatch(t, []string{"hello", "world"}, keys)
 }
 
 func TestMapValues(t *testing.T) {
@@ -31,5 +31,5 @@ func TestMapValues(t *testing.T) {
 
 	// Assert
 	require.Len(t, keys, 2)
-	require.Equal(t, []int{1, 2}, keys)
+	require.ElementsMatch(t, []int{1, 2}, keys)
 }
